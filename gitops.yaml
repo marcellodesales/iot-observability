@@ -1,10 +1,9 @@
-
 version: "3.8"
 
 services:
 
   gitops-committer:
-    image: supercash/resources/gitops-committer
+    image: marcellodesales/gitops-committer
     volumes:
       - ${HOME}/.ssh:/root/.ssh
       - ./gitops:/metadata
